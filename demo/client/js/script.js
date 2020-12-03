@@ -52,6 +52,10 @@
 
             // Expose the whiteboard instance
             window.whiteboard = whiteboard;
+            
+            const newValue = '#de3cad';
+            
+            whiteboard.color = newValue
 
             printDemoMessage();
           
