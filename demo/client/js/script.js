@@ -63,21 +63,9 @@
         function Drawing(data){
             noStroke(); 
              fill(50,200,random(150,255),50);
-             ellipse(data.x,data.y, random (10,30));
-        }
-        function mouseDragged (){
-            
-            var data = {
-             x: mouseX,
-             y: mouseY
-                 }
-   
-        socket.emit ('mouse', data);
-             noStroke(); 
-             fill(255,0,random(50,150),50);
              ellipse(mouseX,mouseY, random (10,30));
-                                }
-//         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        }
+        
             
             
         });
