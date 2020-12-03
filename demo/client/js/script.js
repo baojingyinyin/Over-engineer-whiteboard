@@ -57,4 +57,31 @@
           
         });
     });
+    
+    
+    window.addEventListener('load', () => {
+        console.log('🌍 Connecting to server…');
+
+        const socket = io();
+        const canvas = document.querySelector('#myCanvas');
+
+        socket.on('connect', () => {
+            // At this point we have connected to the server
+            console.log('🌍 Connected to server');
+
+            // Create a Whiteboard instance
+            const whiteboard = new Whiteboard(canvas, socket, '#3c72de',10);
+            
+
+            // Expose the whiteboard instance
+            window.whiteboard = whiteboard;
+
+            printDemoMessage();
+          
+        });
+    });
+    
+    
+    
+    
 })(io, Whiteboard);
