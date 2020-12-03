@@ -56,8 +56,8 @@
             window.whiteboard = whiteboard;
 
             printDemoMessage();
-        });
         
+//         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //         test test test
         
         function Drawing(data){
@@ -77,7 +77,9 @@
              fill(255,0,random(50,150),50);
              ellipse(mouseX,mouseY, random (10,30));
                                 }
-        
-        
+//         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            
+            
+        });
     });
 })(io, Whiteboard);
