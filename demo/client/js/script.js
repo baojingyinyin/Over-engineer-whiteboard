@@ -47,7 +47,7 @@
             console.log('🌍 Connected to server');
 
             // Create a Whiteboard instance
-            const whiteboard = new Whiteboard(canvas, socket, '#ff9089');
+            const whiteboard = new Whiteboard(canvas, socket, '#3c72de');
 
             // Expose the whiteboard instance
             window.whiteboard = whiteboard;
