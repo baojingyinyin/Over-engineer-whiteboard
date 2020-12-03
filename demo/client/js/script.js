@@ -45,17 +45,23 @@
         socket.on('connect', () => {
             // At this point we have connected to the server
             console.log('🌍 Connected to server');
-
-            // Create a Whiteboard instance
-            const whiteboard = new Whiteboard(canvas, socket, '#3c72de',40);
             
-
+            // Random Colors
+            let myColors = ['#3c72de', '#f09800', '#f98790', '#de3cad', '#3c95ad', '#903cad'];
+            let chosenColor = myColors[floor(random(5))];
+            
+            // Create a Whiteboard instance
+//             const whiteboard = new Whiteboard(canvas, socket, '#3c72de',40);
+            const whiteboard = new Whiteboard(canvas, socket, chosenColor, 40);
+            
+            
+            
             // Expose the whiteboard instance
             window.whiteboard = whiteboard;
             
             const newValue = '#de3cad';
             
-            whiteboard.color = newValue
+            whiteboard.color = newValue;
 
             printDemoMessage();
           
