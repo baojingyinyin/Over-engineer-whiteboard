@@ -51,7 +51,7 @@
 //             let chosenColor = myColors[floor(random(5))];
             
             // Create a Whiteboard instance
-            const whiteboard = new Whiteboard(canvas, socket, '#3c72de',40);
+            const whiteboard = new Whiteboard(canvas, socket, '#3c72de',15);
 //             const whiteboard = new Whiteboard(canvas, socket, chosenColor, 40);
             
             
