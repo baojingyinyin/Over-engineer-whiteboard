@@ -59,7 +59,8 @@
             // Expose the whiteboard instance
             window.whiteboard = whiteboard;
             
-            const newValue = '#de3cad';
+//             const newValue = '#de3cad';
+            const newValue = random (['#3c72de', '#f09800', '#f98790', '#de3cad', '#3c95ad', '#903cad']);
             
             whiteboard.color = newValue;
 
